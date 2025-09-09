@@ -1,16 +1,13 @@
+import type { FC } from "react";
 import scss from "./home.module.scss";
-
-const Home = () => {
+interface IHomeProps {
+  setWelcome: (value: boolean) => void;
+}
+const Home: FC<IHomeProps> = ({ setWelcome }) => {
   return (
     <div className={scss.home}>
-      <div className={scss.photo}>
-        <img src="/_.jpeg" alt="" />
-        <img src="/_ (1).jpeg" alt="" />
-        <img src="/_ (2).jpeg" alt="" />
-        <img src="/_ (3).jpeg" alt="" />
-        <img src="/_ (4).jpeg" alt="" />
-        <img src="/base & stacey_.jpeg" alt="" />
-      </div>
+      <p>Наши воспоминание с 2020 года!!!</p>
+      <button onClick={() => setWelcome(true)}>Начать?!</button>
     </div>
   );
 };

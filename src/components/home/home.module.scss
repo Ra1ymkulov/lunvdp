@@ -1,15 +1,10 @@
 .home {
-  .photo {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    img {
-      width: 100%;
-      max-height: 350px;
-      flex-shrink: 0;
-      object-fit: cover;
-      scroll-snap-align: start;
-    }
-  }
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(207, 105, 255);
+  color: #2a0065;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
